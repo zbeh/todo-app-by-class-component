@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+$theme-colors: (
+    "primary":#ffc606,
+    "secondary":#a45cb9,
+    "success":#f8d6fa,
+    "info": #51dbff,
+    "warning":#cf6dde,
+    "danger":#74006f
+);
+
+@import "~bootstrap/scss/bootstrap";
+body{
+    background-color:#e6e6fa;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+.form-container{
+    width: 55%;
+    margin: 0 auto;
+    
+}
+.list-container{
+    width: 55%;
+    margin: auto;
+}
+.todo-container{
+    width: 70%;
+    margin: auto;
+    color: #74006f;
+}
+.form-input{
+    border: none;
+    &:focus{
+       box-shadow: none;
+       border: none;
+    }
+    &::placeholder{
+        color:rgba(255, 255, 255, 0.596)
+    }
+}
